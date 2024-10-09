@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2024 Jaunt Merchandize Overseas Pvt Ltd (JMO)</title>
+    <title>2024 Jaunt Merchantise Overseas Pvt Ltd (JMO)</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -68,7 +68,7 @@
             <h2 class="text-center mb-5">About Us</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <p>2024 Jaunt Merchandize Overseas Pvt Ltd (JMO) is a premier export company based in India with a
+                    <p>2024 Jaunt Merchantise Overseas Pvt Ltd (JMO) is a premier export company based in India with a
                         mission to connect Indian products with global markets. With our expertise, quality assurance,
                         and reliable service, we have earned the trust of clients worldwide.</p>
                 </div>
@@ -88,14 +88,15 @@
                     <form id="contact-form">
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <input type="text" class="form-control" placeholder="Your Name" required>
+                                <input type="text" class="form-control" name="name" placeholder="Your Name" required>
                             </div>
                             <div class="form-group col-md-6">
-                                <input type="email" class="form-control" placeholder="Your Email" required>
+                                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            <textarea class="form-control" name="message" rows="5" placeholder="Your Message"
+                                required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-block">Send Message</button>
                     </form>
@@ -104,9 +105,10 @@
         </div>
     </section>
 
+
     <!-- Footer -->
     <footer class="text-center text-white py-4 bg-dark">
-        <p>&copy; 2024 Jaunt Merchandize Overseas Pvt Ltd (JMO). All rights reserved.</p>
+        <p>&copy; 2024 Jaunt Merchantise Overseas Pvt Ltd (JMO). All rights reserved.</p>
     </footer>
 
     <!-- Bootstrap JS and Dependencies -->
@@ -125,7 +127,7 @@
         document.getElementById("contact-form").addEventListener("submit", function (event) {
             event.preventDefault();
 
-            emailjs.sendForm("jaunt123", "tid1", this) // Ensure these IDs are correct
+            emailjs.sendForm("jaunt123", "t1", this) // Ensure these IDs are correct
                 .then(() => {
                     alert("Message sent successfully!");
                     this.reset();
